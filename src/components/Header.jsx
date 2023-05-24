@@ -6,7 +6,11 @@ import { HeaderBasketCount, HeaderLogo, HeaderNav, HeaderOption, HeaderOptionBas
 
 export default function Header() {
     return (
-        <HeaderWrapperUp>
+        <HeaderWrapperUp
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}>
             <div className='container'>
                 <HeaderWrapper>
                     <Link to="/">

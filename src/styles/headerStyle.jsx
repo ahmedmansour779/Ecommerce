@@ -1,23 +1,26 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 import theme from "./config";
 
-export const HeaderWrapperUp = styled.div`
+export const HeaderWrapperUp = styled(motion.header)`
     label: HeaderWrapper;
     background-color: ${theme.backgroundColor};
 `
 export const HeaderWrapper = styled.div`
     label: HeaderWrapper;
     height: 60px;
-    display: flex;
-    align-items: center;
     position: sticky;
     top: 0;
     z-index: 100;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 `
 export const HeaderLogo = styled.img`
     label: HeaderLogo;
-    margin: 0 20px;
-    margin-top: 18px;
+    margin: 2rem;
     width: 100px;
     object-fit: contain;
 `
