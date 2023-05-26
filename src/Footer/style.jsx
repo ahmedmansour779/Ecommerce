@@ -8,7 +8,6 @@ export const FooterWrapper = styled(motion.section)`
     text-align: center;
     color: ${theme.textBackgroundColor};
     background-color: ${theme.backgroundColor};
-    margin-top: 30rem;
 `
 export const MadeBy = styled("span")`
     label: MadeBy;

@@ -17,6 +17,7 @@ export const HeaderWrapper = styled.div`
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0.5rem 0;
 `
 export const HeaderLogo = styled.img`
     label: HeaderLogo;
@@ -46,8 +47,10 @@ export const HeaderSearchInput = styled.input`
     width: 100%;
 `
 export const HeaderNav = styled.div`
-    label: test ;
+    label: HeaderNav ;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-evenly;
 `
 export const HeaderOption = styled.div`

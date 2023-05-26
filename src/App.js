@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Login from './components/Login'
 import { useAuth } from './context/GlobalState'
 import { auth } from './firebase'
+import PageNotFound from './page not found/PageNotFound'
 
 export default function App() {
   const { dispatch } = useAuth()
@@ -28,7 +29,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<><Header /><Footer /></>} />
       <Route path="/login" element={<><Login /></>} />
-      <Route path="*" element={<><Header /><h3>Page not Found</h3><Footer /></>} />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   )
 }
