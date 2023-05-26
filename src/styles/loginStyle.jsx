@@ -51,9 +51,7 @@ export const LoginContainer = styled.div`
             border: 1px solid ${theme.secondary};
             padding: 0.5rem;
             transition: 0.2s ease-in all;
-            &:hover, :focus {
-                background-color: ${theme.primary};
-            }
+            background-color: ${theme.primary};
         }
     }
 `

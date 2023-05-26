@@ -20,8 +20,8 @@ export const HeaderWrapper = styled.div`
 `
 export const HeaderLogo = styled.img`
     label: HeaderLogo;
-    margin: 2rem;
-    width: 100px;
+    margin: 1rem;
+    width: 5rem;
     object-fit: contain;
 `
 export const HeaderSearch = styled.div`
