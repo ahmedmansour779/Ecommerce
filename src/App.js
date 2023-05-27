@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Footer from './Footer/Footer'
 import Header from './components/Header'
+import Home from './components/Home'
 import Login from './components/Login'
 import { useAuth } from './context/GlobalState'
 import { auth } from './firebase'
@@ -27,7 +28,7 @@ export default function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<><Header /><Footer /></>} />
+      <Route path="/" element={<><Header /><Home /><Footer /></>} />
       <Route path="/login" element={<><Login /></>} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>

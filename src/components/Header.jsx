@@ -7,10 +7,11 @@ import Logo from "../images/login-logo.png"
 import { HeaderBasketCount, HeaderLogo, HeaderNav, HeaderOption, HeaderOptionBasket, HeaderOptionLineOne, HeaderOptionLineTwo, HeaderSearch, HeaderSearchInput, HeaderWrapper, HeaderWrapperUp } from '../styles/headerStyle'
 
 export default function Header() {
-    const { user } = useAuth()
+    const { user, basket } = useAuth()
     const signOut = () => {
         auth.signOut()
     }
+    console.log(basket.length)
 
     return (
         <HeaderWrapperUp
@@ -48,10 +49,12 @@ export default function Header() {
                             <HeaderOptionLineOne>Your</HeaderOptionLineOne>
                             <HeaderOptionLineTwo>Prime</HeaderOptionLineTwo>
                         </HeaderOption>
-                        <Link to="/checkout" >
+                        <Link to="/" >
                             <HeaderOptionBasket>
                                 <IconBasket />
-                                <HeaderBasketCount>5</HeaderBasketCount>
+                                <HeaderBasketCount>
+                                    {basket?.length}
+                                </HeaderBasketCount>
                             </HeaderOptionBasket>
                         </Link>
                     </HeaderNav>
