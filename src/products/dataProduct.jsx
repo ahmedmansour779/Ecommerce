@@ -1,4 +1,3 @@
-import shortid from "shortid";
 import imag1 from "../images/products/1.png";
 import imag2 from "../images/products/2.png";
 import imag3 from "../images/products/3.png";
@@ -8,52 +7,52 @@ import imag6 from "../images/products/6.png";
 
 const dataProducts = [
     {
-        id: shortid.generate(),
+        id: Math.random(),
         name: "Product",
-        describe: "Product description",
-        prise: "50$",
+        describe: "Product description 1",
+        prise: "100.50",
         img: imag1,
-        rating: 3,
+        rating: 4.5,
     },
     {
-        id: shortid.generate(),
+        id: Math.random(),
         name: "Product",
-        describe: "Product description",
-        prise: "50$",
+        describe: "Product description 2",
+        prise: "5000",
         img: imag2,
-        rating: 3,
+        rating: 5,
     },
     {
-        id: shortid.generate(),
+        id: Math.random(),
         name: "Product",
-        describe: "Product description",
-        prise: "50$",
+        describe: "Product description 3",
+        prise: "10000",
         img: imag3,
-        rating: 3,
+        rating: 3.5,
     },
     {
-        id: shortid.generate(),
+        id: Math.random(),
         name: "Product",
-        describe: "Product description",
-        prise: "50$",
+        describe: "Product description 4",
+        prise: "1500",
         img: imag4,
-        rating: 3,
+        rating: 5,
     },
     {
-        id: shortid.generate(),
+        id: Math.random(),
         name: "Product",
-        describe: "Product description",
-        prise: "50$",
+        describe: "Product description 6",
+        prise: "500.75",
         img: imag5,
-        rating: 3,
+        rating: 2.5,
     },
     {
-        id: shortid.generate(),
+        id: Math.random(),
         name: "Product",
-        describe: "Product description",
-        prise: "50$",
+        describe: "Product description 6",
+        prise: "3000",
         img: imag6,
-        rating: 3,
+        rating: 5,
     },
 ]
 

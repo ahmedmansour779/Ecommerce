@@ -8,7 +8,7 @@ export default function Product() {
         <>
             <div className='container'>
                 <HomeRow>
-                    {dataProducts.map((item) => {
+                    {dataProducts.map((item, index) => {
                         return (
                             <Products
                                 id={item.id}
@@ -17,7 +17,7 @@ export default function Product() {
                                 name={item.name}
                                 prise={item.prise}
                                 rating={item.rating}
-                                key={item.id} />
+                                key={index} />
                         )
                     })}
                 </HomeRow>

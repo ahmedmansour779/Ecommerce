@@ -10,8 +10,8 @@ export default function Header() {
     const { user, basket } = useAuth()
     const signOut = () => {
         auth.signOut()
+        basket = 0
     }
-    console.log(basket.length)
 
     return (
         <HeaderWrapperUp
@@ -35,7 +35,7 @@ export default function Header() {
                                     hello {user ? user.email : "Guest"}
                                 </HeaderOptionLineOne>
                                 <HeaderOptionLineTwo onClick={signOut}>
-                                    {user ? "Sign Out" : "Sign In"}
+                                    {user ? "LogOut" : "Sign In"}
                                 </HeaderOptionLineTwo>
                             </HeaderOption>
                         </Link>
@@ -49,7 +49,7 @@ export default function Header() {
                             <HeaderOptionLineOne>Your</HeaderOptionLineOne>
                             <HeaderOptionLineTwo>Prime</HeaderOptionLineTwo>
                         </HeaderOption>
-                        <Link to="/" >
+                        <Link to="/checkout" >
                             <HeaderOptionBasket>
                                 <IconBasket />
                                 <HeaderBasketCount>

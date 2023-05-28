@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Footer from './Footer/Footer'
+import CheckOut from './components/CheckOut'
 import Header from './components/Header'
 import Home from './components/Home'
 import Login from './components/Login'
@@ -30,6 +31,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<><Header /><Home /><Footer /></>} />
       <Route path="/login" element={<><Login /></>} />
+      <Route path="/checkout" element={<><Header /> <CheckOut /></>} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   )

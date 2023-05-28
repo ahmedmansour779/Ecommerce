@@ -14,11 +14,10 @@ function Products({ id, describe, prise, rating, img, name }) {
                 prise: prise,
                 rating: rating,
                 img: img,
-                name: name
+                name: name,
             }
         })
     }
-    console.log(basket)
 
     return (
         <>
@@ -30,7 +29,7 @@ function Products({ id, describe, prise, rating, img, name }) {
                     </ProductPrice>
                 </ProductInfo>
                 <RatingWrapper>
-                    <Rating defaultValue={rating} readOnly />
+                    <Rating fractions={2} defaultValue={rating} readOnly />
                 </RatingWrapper>
                 <img src={img} alt={name} />
                 <button onClick={addToBasket}>Add to Basket</button>

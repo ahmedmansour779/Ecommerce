@@ -30,10 +30,10 @@ export const ProductWrapper = styled(motion.div)`
     button {
         display: block;
         margin: 10px auto 0;
-        background-color: #cd9042;
+        background-color: ${theme.textBackgroundColor};
         border: 1px solid;
-        border-color: #a88734 #9c7e31 #846a29;
-        color: #111;
+        border-color: ${theme.secondary};
+        color: ${theme.backgroundColor};
         cursor: pointer;
         width: 150px;
         height: 35px;
