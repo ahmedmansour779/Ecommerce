@@ -4,7 +4,7 @@ import { useAuth } from "../context/GlobalState"
 import { ProductInfo, ProductPrice, ProductWrapper, RatingWrapper } from '../styles/productStyle'
 
 function Products({ id, describe, prise, rating, img, name }) {
-    const { dispatch, basket } = useAuth()
+    const { dispatch } = useAuth()
     const addToBasket = () => {
         dispatch({
             type: "ADD_TO_BASKET",
@@ -25,7 +25,7 @@ function Products({ id, describe, prise, rating, img, name }) {
                 <ProductInfo>
                     <b>{describe}</b>
                     <ProductPrice>
-                        <b>{prise}</b>
+                        <b>{prise} $</b>
                     </ProductPrice>
                 </ProductInfo>
                 <RatingWrapper>

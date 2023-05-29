@@ -10,7 +10,6 @@ export default function Header() {
     const { user, basket } = useAuth()
     const signOut = () => {
         auth.signOut()
-        basket = 0
     }
 
     return (

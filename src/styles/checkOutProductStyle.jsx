@@ -55,3 +55,9 @@ export const CheckOutProductPrice = styled.p`
     label: ProductPrice;
     margin-top: 5px;
 `
+export const NotProduct = styled(motion.h3)`
+    label: NotProduct;
+    padding: 1rem;
+    text-transform: capitalize;
+    color: ${theme.backgroundColor};
+`
