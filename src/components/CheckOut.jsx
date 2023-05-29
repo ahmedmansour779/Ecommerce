@@ -6,7 +6,7 @@ import adImag from "../images/ad.jpg"
 import { CheckOutHeader, CheckOutLeft, CheckOutWrapper, CheckoutAd, CheckoutTitle } from '../styles/checkOutStyle'
 
 function CheckOut() {
-    const { user, basket } = useAuth()
+    const { user } = useAuth()
 
     return (
         <>

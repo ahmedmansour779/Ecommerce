@@ -24,7 +24,7 @@ export default function CheckOutProducts({ id, describe, prise, rating, img, nam
                 <CheckoutProductInfo>
                     <b>{describe}</b>
                     <CheckOutProductPrice>
-                        <b>{prise}</b>
+                        <b>{prise} $</b>
                     </CheckOutProductPrice>
                     <RatingWrapper>
                         <Rating fractions={2} defaultValue={rating} readOnly />

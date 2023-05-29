@@ -5,6 +5,7 @@ import CheckOut from './components/CheckOut'
 import Header from './components/Header'
 import Home from './components/Home'
 import Login from './components/Login'
+import Payment from './components/Payment'
 import { useAuth } from './context/GlobalState'
 import { auth } from './firebase'
 import PageNotFound from './page not found/PageNotFound'
@@ -32,6 +33,7 @@ export default function App() {
       <Route path="/" element={<><Header /><Home /><Footer /></>} />
       <Route path="/login" element={<><Login /></>} />
       <Route path="/checkout" element={<><Header /> <CheckOut /></>} />
+      <Route path="/payment" element={<><Header /> <Payment /><Footer /></>} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   )

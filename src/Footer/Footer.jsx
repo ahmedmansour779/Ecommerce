@@ -13,7 +13,7 @@ export default function Footer() {
             id='footer'>
             <div className='container'>
                 <div>
-                    <span>Copyright &#169; 2023 Your company | Design :<MadeBy> Ahmed Mansour</MadeBy></span>
+                    <span>Amazon Clone | Design :<MadeBy> Ahmed Mansour</MadeBy></span>
                 </div>
                 <div>
                     <Ul>
