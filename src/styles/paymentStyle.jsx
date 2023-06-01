@@ -24,14 +24,15 @@ export const PaymentSection = styled.div`
     padding: 1rem;
     flex-wrap: wrap;
     gap: 1rem;
-    h3 {
-        width:35% ;
+    & > h3 {
+        min-width:35% ;
     }
-    & > div {
+    & > div, & > form {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 1rem;
+        width: 30rem;
     }
     button {
         background-color: ${theme.textBackgroundColor};
@@ -48,4 +49,8 @@ export const PaymentSection = styled.div`
             transform: scale(0.8);
         }
     }
+`
+export const CreditCart = styled.section`
+    label: CreditCart;
+    width: 100%;
 `
