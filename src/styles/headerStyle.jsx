@@ -26,6 +26,7 @@ export const HeaderWrapper = styled.div`
 export const HeaderLogo = styled.img`
     label: HeaderLogo;
     width: 100%;
+    height: 2.3rem;
     object-fit: contain;
 `
 export const HeaderSearch = styled.div`

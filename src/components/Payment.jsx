@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import CurrencyFormat from 'react-currency-format'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from "../axios"
-import CheckOutProduct from '../check out/CheckOutProduct'
+import CheckOutProduct from '../checkOut/CheckOutProduct'
 import { getBasketTotal } from '../context/AppReducer'
 import { useAuth } from '../context/GlobalState'
 import { db } from "../firebase"

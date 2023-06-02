@@ -9,6 +9,8 @@ export const LogIn = styled(motion.div)`
     align-items: center;
     height: 100vh;
     background-color: ${theme.primary};
+    margin-top: 2rem;
+    gap: 2rem;
 `
 export const LoginLogo = styled.div`
     label: LoginLogo;

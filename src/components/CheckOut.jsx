@@ -1,5 +1,5 @@
 import React from 'react'
-import CheckOutProduct from '../check out/CheckOutProduct'
+import CheckOutProduct from '../checkOut/CheckOutProduct'
 import TotalPrice from '../checkOut/TotalPrice'
 import { useAuth } from '../context/GlobalState'
 import adImag from "../images/ad.jpg"
