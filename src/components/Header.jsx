@@ -1,3 +1,4 @@
+import { Container } from '@mantine/core'
 import { IconBasket, IconSearch } from '@tabler/icons-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -18,8 +19,8 @@ export default function Header() {
             initial={{ opacity: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}>
-            <div className='container'>
-                <HeaderWrapper>
+            <Container size="lg">
+                <HeaderWrapper >
                     <Link to="/">
                         <HeaderLogo src={Logo} alt='logo-img' />
                     </Link>
@@ -31,7 +32,7 @@ export default function Header() {
                         <Link to={!user && "/login"} >
                             <HeaderOption >
                                 <HeaderOptionLineOne>
-                                    hello {user ? user.email : "Guest"}
+                                    Hello {user ? user.email : "Guest"}
                                 </HeaderOptionLineOne>
                                 <HeaderOptionLineTwo onClick={signOut}>
                                     {user ? "LogOut" : "Sign In"}
@@ -58,7 +59,7 @@ export default function Header() {
                         </Link>
                     </HeaderNav>
                 </HeaderWrapper>
-            </div>
+            </Container>
         </HeaderWrapperUp>
     )
 }

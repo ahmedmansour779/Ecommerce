@@ -13,6 +13,7 @@ export const ProductWrapper = styled(motion.div)`
     padding: 20px;
     background-color: ${theme.primary};
     transition: background 0.3s ease;
+    
     &:hover {
         background-color: ${theme.backgroundColor};
         color: ${theme.primary};
@@ -31,8 +32,7 @@ export const ProductWrapper = styled(motion.div)`
         display: block;
         margin: 10px auto 0;
         background-color: ${theme.textBackgroundColor};
-        border: 1px solid;
-        border-color: ${theme.secondary};
+        border: none;
         color: ${theme.backgroundColor};
         cursor: pointer;
         width: 150px;

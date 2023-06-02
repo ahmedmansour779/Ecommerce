@@ -1,6 +1,6 @@
 import React from 'react'
 import CheckOutProduct from '../check out/CheckOutProduct'
-import TotalPrice from '../check out/TotalPrice'
+import TotalPrice from '../checkOut/TotalPrice'
 import { useAuth } from '../context/GlobalState'
 import adImag from "../images/ad.jpg"
 import { CheckOutHeader, CheckOutLeft, CheckOutWrapper, CheckoutAd, CheckoutTitle } from '../styles/checkOutStyle'

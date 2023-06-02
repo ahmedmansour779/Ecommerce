@@ -11,7 +11,7 @@ import Orders from './components/Orders'
 import Payment from './components/Payment'
 import { useAuth } from './context/GlobalState'
 import { auth } from './firebase'
-import PageNotFound from './page not found/PageNotFound'
+import PageNotFound from './pageNotFound/PageNotFound'
 
 export default function App() {
   const { dispatch } = useAuth()

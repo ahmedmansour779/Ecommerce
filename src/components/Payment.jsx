@@ -1,4 +1,5 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js"
+import { doc, setDoc } from "firebase/firestore"
 import React, { useEffect, useState } from 'react'
 import CurrencyFormat from 'react-currency-format'
 import { Link, useNavigate } from 'react-router-dom'
@@ -6,6 +7,7 @@ import axios from "../axios"
 import CheckOutProduct from '../check out/CheckOutProduct'
 import { getBasketTotal } from '../context/AppReducer'
 import { useAuth } from '../context/GlobalState'
+import { db } from "../firebase"
 import { CreditCart, PaymentSection, PaymentWrapper } from '../styles/paymentStyle'
 
 function Payment() {
@@ -32,16 +34,21 @@ function Payment() {
     const handelSubmit = async (e) => {
         e.preventDefault()
         setProcessing(true);
-        console.log("test")
+        navigate("/orders", { replace: true });
         const payload = await stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: elements.getElement(CardElement)
             }
-        }).then((paymentIntent) => {
+        }).then(({ paymentIntent }) => {
+            const ref = doc(db, "users", user?.uid, "orders", paymentIntent.id);
+            setDoc(ref, {
+                basket: basket,
+                amount: paymentIntent.amount,
+                created: paymentIntent.created
+            })
             setSucceeded(true);
             setError(null);
             setProcessing(false);
-            navigate("/orders", { replace: true });
             dispatch({
                 type: "EMPTY_BASKET",
             });

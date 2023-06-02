@@ -3,26 +3,29 @@ import { motion } from "framer-motion";
 import theme from "./config";
 
 export const HeaderWrapperUp = styled(motion.header)`
-    label: HeaderWrapper;
+    label: HeaderWrapperUp;
     background-color: ${theme.backgroundColor};
 `
 export const HeaderWrapper = styled.div`
     label: HeaderWrapper;
+    display: flex;
     height: 60px;
     position: sticky;
     top: 0;
     z-index: 100;
     height: auto;
-    display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
+    gap: 1rem;
+    & > a {
+        width: 4.5rem;
+    }
 `
 export const HeaderLogo = styled.img`
     label: HeaderLogo;
-    margin: 1rem;
-    width: 5rem;
+    width: 100%;
     object-fit: contain;
 `
 export const HeaderSearch = styled.div`
