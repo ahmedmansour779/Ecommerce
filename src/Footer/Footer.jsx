@@ -1,5 +1,5 @@
 
-import { Flex } from '@mantine/core'
+import { Container, Flex } from '@mantine/core'
 import { IconBrandFacebook, IconBrandLinkedin, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react'
 import React from 'react'
 import { FooterWrapper, MadeBy } from './style'
@@ -12,7 +12,7 @@ export default function Footer() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
             id='footer'>
-            <div className='container'>
+            <Container size={"xl"}>
                 <div>
                     <span>Amazon Clone | Design :<MadeBy> Ahmed Mansour</MadeBy></span>
                 </div>
@@ -35,7 +35,7 @@ export default function Footer() {
                         <IconBrandYoutube color='red' />
                     </a>
                 </Flex>
-            </div>
+            </Container>
         </FooterWrapper >
     )
 }

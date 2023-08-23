@@ -45,7 +45,6 @@ export const HeaderSearch = styled.div`
 `
 export const HeaderSearchInput = styled.input`
     label: HeaderSearchInput ;
-    height: 2rem;
     padding: 1rem;
     border: none;
     width: 100%;

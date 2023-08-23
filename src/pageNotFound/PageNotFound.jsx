@@ -1,3 +1,4 @@
+import { Container } from '@mantine/core'
 import React from 'react'
 import Footer from '../Footer/Footer'
 import Header from '../components/Header'
@@ -14,11 +15,11 @@ export default function PageNotFound() {
                     initial={{ opacity: 0 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5 }}>
-                    <div className='container'>
+                    <Container size={"xl"}>
                         <img src={img} alt="logo" />
                         <h1>Page Not Found</h1>
                         <p>Error 404</p>
-                    </div>
+                    </Container>
                 </PageNotFoundWrapper>
                 <Footer />
             </PageNotFoundUp>

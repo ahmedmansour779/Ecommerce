@@ -19,14 +19,14 @@ export default function Header() {
             initial={{ opacity: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}>
-            <Container size="lg">
+            <Container size="xl">
                 <HeaderWrapper >
                     <Link to="/">
                         <HeaderLogo src={Logo} alt='logo-img' />
                     </Link>
                     <HeaderSearch>
-                        <HeaderSearchInput className='header-searchInput' placeholder='search' type='text' />
-                        <IconSearch />
+                        <HeaderSearchInput placeholder='search' type='text' />
+                        <IconSearch style={{ padding: "5px", height: "22px!important", backgroundColor: "#cd9042", marginLeft: "-40px" }} />
                     </HeaderSearch>
                     <HeaderNav>
                         <Link to={!user && "/login"} >

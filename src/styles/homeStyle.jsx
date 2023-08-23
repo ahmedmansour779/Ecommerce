@@ -16,7 +16,8 @@ export const HomeRow = styled.div`
     z-index: 1;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2%;
+    gap: 1rem;
+    justify-content: space-between;
 `
 export const HomeImage = styled.img`
     label: HomeComponent;

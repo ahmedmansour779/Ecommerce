@@ -1,3 +1,4 @@
+import { Container } from '@mantine/core'
 import React from 'react'
 import dataProducts from '../products/dataProduct'
 import { HomeRow } from '../styles/homeStyle'
@@ -6,7 +7,7 @@ import Products from './Products'
 export default function Product() {
     return (
         <>
-            <div className='container'>
+            <Container size="xl" >
                 <HomeRow>
                     {dataProducts.map((item, index) => {
                         return (
@@ -21,7 +22,7 @@ export default function Product() {
                         )
                     })}
                 </HomeRow>
-            </div>
+            </Container>
         </>
     )
 }

@@ -1,3 +1,4 @@
+import { Container } from '@mantine/core'
 import React from 'react'
 import CheckOutProduct from '../checkOut/CheckOutProduct'
 import TotalPrice from '../checkOut/TotalPrice'
@@ -10,7 +11,7 @@ function CheckOut() {
 
     return (
         <>
-            <div className='container'>
+            <Container size="xl">
                 <CheckOutWrapper
                     animate={{ opacity: 1 }}
                     initial={{ opacity: 0 }}
@@ -26,7 +27,7 @@ function CheckOut() {
                     </CheckOutHeader>
                     <CheckOutProduct />
                 </CheckOutWrapper>
-            </div>
+            </Container>
         </>
     )
 }

@@ -1,3 +1,4 @@
+import { Container } from "@mantine/core"
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js"
 import { doc, setDoc } from "firebase/firestore"
 import React, { useEffect, useState } from 'react'
@@ -61,7 +62,7 @@ function Payment() {
         setError(error ? error.message : "")
     }
     return (
-        <div className='container'>
+        <Container size="xl">
             <PaymentWrapper>
                 <h1>
                     Checkout (<Link to="/checkout"><span>{basket.length} items</span></Link>)
@@ -97,7 +98,7 @@ function Payment() {
                     </form>
                 </PaymentSection>
             </PaymentWrapper>
-        </div>
+        </Container>
     )
 }
 
